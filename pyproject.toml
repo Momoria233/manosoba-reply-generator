@@ -1,6 +1,10 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "nonebot-plugin-manosoba-reply-generator"
-version = "0.1.5"
+version = "0.1.6"
 description = "a reply img generator for the game manosoba"
 readme = "README.md"
 requires-python = ">=3.9, <4.0"
@@ -17,3 +21,9 @@ adapters = [
 plugins = ["nonebot_plugin_manosoba_reply_generator"]
 plugin_dirs = []
 builtin_plugins = ["echo"]
+
+[tool.setuptools.packages.find]
+include = ["nonebot_plugin_manosoba_reply_generator"]
+
+[tool.setuptools.package-data]
+nonebot_plugin_manosoba_reply_generator = ["assets/*"]
