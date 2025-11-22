@@ -1,11 +1,11 @@
 [project]
 name = "nonebot-plugin-manosoba-reply-generator"
-version = "0.1.4"
+version = "0.1.5"
 description = "a reply img generator for the game manosoba"
 readme = "README.md"
 requires-python = ">=3.9, <4.0"
 dependencies = [
-    "nonebot2>=2.0.0",
+    "nonebot2>=2.3.0",
     "nonebot-adapter-onebot>=2.0.0",
     "pillow>=10.0.0"
 ]
